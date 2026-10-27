@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to HubSkins</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16v4M17 18h4"/></svg>
+      </div>
+      <h1>HubSkins is ready</h1>
+      <p class="lede">Pick a theme and open GitHub. You can change it any time from the toolbar icon.</p>
+    </header>
+
+    <section aria-labelledby="pickTitle" class="card">
+      <h2 id="pickTitle">1. Pick a theme</h2>
+      <div class="swatches" id="swatches" role="group" aria-labelledby="pickTitle"></div>
+      <p class="hint" id="pickedName" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="openTitle" class="card">
+      <h2 id="openTitle">2. See it on GitHub</h2>
+      <p>Open any repository, your profile or a pull request. Every page you already have open updates by itself.</p>
+      <a class="btn" href="https://github.com" target="_blank" rel="noopener">Open GitHub</a>
+    </section>
+
+    <section aria-labelledby="tipsTitle" class="card">
+      <h2 id="tipsTitle">Good to know</h2>
+      <ul class="tips">
+        <li>Click the HubSkins icon in your toolbar (pin it from the puzzle-piece menu) to change themes, add your own background picture or turn on a new theme every day.</li>
+        <li id="keysTip" hidden>Shortcuts: <span id="keys"></span></li>
+        <li>Nothing leaves your browser. HubSkins has no account, no tracking and no network requests.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="loveTitle" class="card love" id="loveCard" hidden>
+      <h2 id="loveTitle">Enjoying it?</h2>
+      <p>A quick rating helps other developers find HubSkins. It takes ten seconds.</p>
+      <div class="actions">
+        <a class="btn" id="rateLink" href="#" target="_blank" rel="noopener" hidden>Rate HubSkins</a>
+        <a class="btn ghost" id="supportLink" href="#" target="_blank" rel="noopener" hidden>Support the developer</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../shared/config.js"></script>
+  <script src="../shared/themes.js"></script>
+  <script src="../shared/derived.js"></script>
+  <script src="welcome.js"></script>
+</body>
+</html>

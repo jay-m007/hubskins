@@ -1,0 +1,86 @@
+{
+  "manifest_version": 3,
+  "name": "HubSkins: Themes for GitHub",
+  "short_name": "HubSkins",
+  "version": "1.0.1",
+  "description": "16 hand-made themes for GitHub: neon, sakura, pixel art, paper and more. Themed contribution graph. Free, no tracking.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "HubSkins",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ],
+      "css": [
+        "styles/hubskins.css"
+      ],
+      "js": [
+        "shared/themes.js",
+        "content/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "fonts/*.woff2"
+      ],
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ]
+    }
+  ],
+  "commands": {
+    "toggle-theme": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "Turn the theme on or off"
+    },
+    "next-theme": {
+      "suggested_key": {
+        "default": "Alt+Shift+N"
+      },
+      "description": "Switch to the next theme"
+    }
+  },
+  "background": {
+    "scripts": [
+      "shared/themes.js",
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hubskins@example.com",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}
