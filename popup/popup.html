@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HubSkins</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="panel" id="panel">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16v4M17 18h4"/></svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-name" id="brandName">HubSkins</div>
+          <div class="brand-sub" id="brandSub">Themes for GitHub</div>
+        </div>
+      </div>
+      <button class="power" id="power" type="button" role="switch" aria-checked="true" aria-label="Themes on">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 3v8"/><path d="M6.3 6.6a8 8 0 1 0 11.4 0"/></svg>
+        <span id="powerLabel">On</span>
+      </button>
+    </header>
+
+    <main class="scroll" id="scroll">
+      <section aria-labelledby="themesTitle">
+        <div class="section-head">
+          <h2 id="themesTitle">Themes</h2>
+          <span class="current" id="currentName" aria-live="polite"></span>
+        </div>
+        <div class="grid" id="grid" role="group" aria-labelledby="themesTitle"></div>
+      </section>
+
+      <section aria-labelledby="optionsTitle">
+        <div class="section-head"><h2 id="optionsTitle">Options</h2></div>
+        <div class="options" id="options"></div>
+      </section>
+
+      <section aria-labelledby="pictureTitle">
+        <div class="section-head"><h2 id="pictureTitle">Your own picture</h2></div>
+        <div class="picture" id="picture">
+          <div class="picture-empty" id="pictureEmpty">
+            <p>Put any picture behind GitHub. The theme's colors cover it just enough to keep text readable.</p>
+            <button class="btn" id="addPicture" type="button">Add picture</button>
+          </div>
+          <div class="picture-set" id="pictureSet" hidden>
+            <div class="thumb" id="thumb" role="img" aria-label="Your picture"></div>
+            <div class="picture-controls">
+              <div class="row">
+                <label class="opt-label" for="useImage">Show picture</label>
+                <button class="switch" id="useImage" type="button" role="switch" aria-checked="false"><span class="knob"></span></button>
+              </div>
+              <label class="slider-label" for="visibility">Picture visibility</label>
+              <input type="range" id="visibility" min="0" max="100" step="1">
+              <div class="picture-actions">
+                <button class="btn small" id="changePicture" type="button">Change</button>
+                <button class="btn small ghost" id="removePicture" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+          <p class="note" id="pictureNote" role="status"></p>
+          <input type="file" id="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="keys" id="keys"></div>
+      <div class="links">
+        <a id="bugLink" href="#" target="_blank" rel="noopener" hidden>Report a bug</a>
+        <a id="supportLink" class="support" href="#" target="_blank" rel="noopener" hidden>Support the dev</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../shared/config.js"></script>
+  <script src="../shared/themes.js"></script>
+  <script src="../shared/derived.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
