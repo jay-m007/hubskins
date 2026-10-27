@@ -6,6 +6,14 @@ A browser extension that gives GitHub 16 hand-made themes (neon, sakura, pixel, 
 - Alt+Shift+N jumps to the next theme
 - Optional daily theme shuffle
 
+## Themes
+
+| | |
+|---|---|
+| ![Neon Tokyo](docs/screenshots/1-neon-tokyo.png) | ![Synthwave Sunset](docs/screenshots/2-synthwave-sunset.png) |
+| ![Crimson Web](docs/screenshots/3-crimson-web.png) | ![Vintage Paper](docs/screenshots/4-vintage-paper.png) |
+| ![Sakura Night](docs/screenshots/5-sakura-night.png) | |
+
 ## Install
 - Firefox: under review on addons.mozilla.org
 - Edge: coming soon
