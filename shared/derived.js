@@ -160,6 +160,56 @@
       "minDim": 0.83,
       "popupAccent": "#f08a3a",
       "popupAccentInk": "#0e0f14"
+    },
+    "grid-orchid": {
+      "text": "#f3eaff",
+      "muted": "#b9a5d9",
+      "accent": "#d68cff",
+      "fill": "#b44dff",
+      "onEmph": "#130c1f",
+      "minDim": 0.8,
+      "popupAccent": "#b44dff",
+      "popupAccentInk": "#0e0f14"
+    },
+    "midnight-grid": {
+      "text": "#e6f0ff",
+      "muted": "#9db6d6",
+      "accent": "#5eb0ff",
+      "fill": "#2f8cf0",
+      "onEmph": "#08111f",
+      "minDim": 0.8,
+      "popupAccent": "#2f8cf0",
+      "popupAccentInk": "#0e0f14"
+    },
+    "fastlap": {
+      "text": "#f4f5f7",
+      "muted": "#a9aeba",
+      "accent": "#ffe14a",
+      "fill": "#ffd60a",
+      "onEmph": "#0e0f12",
+      "minDim": 0.8,
+      "popupAccent": "#ffd60a",
+      "popupAccentInk": "#0e0f14"
+    },
+    "shrine": {
+      "text": "#eef0ff",
+      "muted": "#aab0dc",
+      "accent": "#ff7a66",
+      "fill": "#e5483a",
+      "onEmph": "#0b0e24",
+      "minDim": 0.8,
+      "popupAccent": "#e5483a",
+      "popupAccentInk": "#0e0f14"
+    },
+    "dusk-train": {
+      "text": "#f5efe6",
+      "muted": "#b7c3cf",
+      "accent": "#ffb15c",
+      "fill": "#f58f2e",
+      "onEmph": "#121a24",
+      "minDim": 0.8,
+      "popupAccent": "#f58f2e",
+      "popupAccentInk": "#0e0f14"
     }
   };
 })(typeof globalThis !== 'undefined' ? globalThis : this);

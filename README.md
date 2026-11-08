@@ -1,6 +1,6 @@
 # HubSkins: Themes for GitHub
 
-A browser extension that gives GitHub 16 hand-made themes (neon, sakura, pixel, paper, synthwave and more), including a themed contribution graph. Free, no tracking, no network requests, runs only on github.com and gist.github.com.
+A browser extension that gives GitHub 21 hand-made themes (neon, sakura, pixel, paper, synthwave and more), including a themed contribution graph. Free, no tracking, no network requests, runs only on github.com and gist.github.com.
 
 - Alt+Shift+T turns the theme on or off
 - Alt+Shift+N jumps to the next theme
